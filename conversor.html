@@ -1,0 +1,20 @@
+<html>
+<title>Conversor de monedas</title>
+<body>
+
+<h2>Convertir divisas</h2>
+<p>Seleccione el tipo de moneda y cantidad a convertir:</p>
+
+<p>
+  <label>Dólares</label>
+  <input id="inputFeet" type="number" placeholder="dolares" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Pesos argentinos: <span id="outputMeters"></span></p>
+
+<script>
+function LengthConverter(valNum) {
+  document.getElementById("outputMeters").innerHTML=valNum*198.30;
+}
+</script>
+</body>
+</html>
