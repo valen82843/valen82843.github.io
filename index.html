@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Conversor de moneda</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <title>Conversor de moneda</title> 
 </head>
 <body>
-
-    <img src="img/icono.png" alt="" class="conversor-imagen">
+  <center>
+    <div class="titulo">
     <h1>Conversor de moneda</h1>
-    <p>Escoje la moneda y la cantidad para realizar la conversion</p>
-    
+ </div>
+ <div class="texto1">
+    <p>Elije la moneda y la cantidad para realizar la conversión</p>
+  </div>
     <div class="container">
         <div class="moneda">
-            <select id="moneda-uno">
+            <select id="moneda-uno" class="monedauno">
                 
                 <option value="ARS">ARS</option>
                 <option value="EUR">EUR</option>
@@ -23,8 +26,7 @@
 
 
             </select>
-
-            <input 
+            <input class="botones"
             type="number" 
             id="cantidad-uno" 
             placeholder="0"  
@@ -32,18 +34,18 @@
             >
 
         </div>
-
+        <p>
         <div class="taza-cambio-container">
             <button class="btn" id="taza">
-                cambio
+                Cambiar
             </button>
-
+          </p>
             <div class="cambio" id="cambio"></div>
 
         </div>
-
+        <p>
         <div class="moneda">
-            <select id="moneda-dos">
+            <select id="moneda-dos" class="monedados">
        
                 <option value="ARS">ARS</option>
                 <option value="EUR" selected>EUR</option>
@@ -51,15 +53,22 @@
 
             </select>
 
-            <input 
+            <input class="botones2"
             type="number" 
             id="cantidad-dos" 
             placeholder="0"  
             >
 
         </div>
+        </p>
     </div>
-
+    <p>
+    <button class="boton5" onclick="location.href='https://datosmacro.expansion.com/divisas'" type="button" >
+      
+      Click aquí si desea saber más sobre estas monedas</button>
+    </p>
+  
 <script src="funciones.js"></script>
+  </center>
 </body>
 </html>
