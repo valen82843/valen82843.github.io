@@ -15,11 +15,8 @@ function calculate(){
    .then(res => res.json() )
    .then(data => {
        const taza = data.rates[moneda_two];
-       
        cambioEl.innerText = `1 ${moneda_one} = ${taza} ${moneda_two}`;
-
        cantidadEl_two.value = (cantidadEl_one.value * taza).toFixed(2);
-
     } );
     
 }
